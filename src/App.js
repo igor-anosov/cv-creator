@@ -296,7 +296,7 @@ const App = () => {
               achievements={[
                 "Key role in the design and development of the app that aims to control hardware equipment for stores and shops",
                 "Implemented a dynamic dashboard with real-time data visualization, enabling users to monitor and adjust cooling systems based on temperature and energy consumption metrics.",
-                "Developed smart system UI components with full control features for use in the dashboard and the app. It's been used lately by other engineering departments of Danfoss Co.",,
+                "Developed smart system UI components with full control features for use in the dashboard and the app. It's been used lately by other engineering departments of Danfoss Co.",
                 "Had a business trip to Denmark to collaborate directly with the client-side team."
               ]}
               description={"The app that aims to control hardware equipment for stores and shops. Users can control, toggle on/off, and view real-time data for all in-store equipment and hardware, such as refrigerators, lighting, air conditioning, and more."}

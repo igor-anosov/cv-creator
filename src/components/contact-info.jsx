@@ -21,11 +21,11 @@ const ContactInfo = () => (
       <FontAwesomeIcon icon={faLocationDot} />
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/ihor-anosov-aba7b7109/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ihor-anosov-aba7b7109/" target="_blank" rel="noreferrer">LinkedIn</a>
       <FontAwesomeIcon icon={faLinkedin} />{" "}
     </li>
     <li>
-      <a href="https://github.com/igor-anosov" target="_blank">GitHub</a>
+      <a href="https://github.com/igor-anosov" target="_blank" rel="noreferrer">GitHub</a>
       <FontAwesomeIcon icon={faGithub} />{" "}
     </li>
   </ul>
