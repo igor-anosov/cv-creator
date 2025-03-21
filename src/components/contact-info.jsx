@@ -9,12 +9,11 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const ContactInfo = () => (
   <ul className="contact-info">
     <li>
-      {/*<a href="mailto:anosovigor8@gmail.com">anosovigor8@gmail.com</a>*/}
-      <a href="mailto:ihor.anosov@capgemini.com">ihor.anosov@capgemini.com</a>
+      <a href="mailto:anosovigor8@gmail.com">anosovigor8@gmail.com</a>
       <FontAwesomeIcon icon={faEnvelope} />
     </li>
     <li>
-      +38095-752-6954
+      <a href="tel:+38095-752-6954">+38095-752-6954</a>
       <FontAwesomeIcon icon={faPhone} />
     </li>
     <li>
@@ -22,11 +21,11 @@ const ContactInfo = () => (
       <FontAwesomeIcon icon={faLocationDot} />
     </li>
     <li>
-      <a href="https://linkedin.com/in/igor-anosov-aba7b7109">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ihor-anosov-aba7b7109/" target="_blank">LinkedIn</a>
       <FontAwesomeIcon icon={faLinkedin} />{" "}
     </li>
     <li>
-      <a href="https://github.com/igor-anosov">GitHub</a>
+      <a href="https://github.com/igor-anosov" target="_blank">GitHub</a>
       <FontAwesomeIcon icon={faGithub} />{" "}
     </li>
   </ul>

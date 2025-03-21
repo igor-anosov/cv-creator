@@ -11,30 +11,25 @@ const hardSkills = [
   "Responsive Design",
   "Redux",
   "Redux Saga",
-  // "Zustand",
+  "Zustand",
   "WebPack",
   "HTML5",
   "CSS3/CSS4",
   "Tailwind CSS",
   "RESTful APIs",
-  "Node.js",
-  // "NextJS",
   "Git",
   "Agile/SCRUM",
   "Design Patterns",
-  // "Microfrontend",
   "Performance Optimization",
   "Jest",
   "Vite",
   "React Testing Library",
   "Error Handling",
-  // "MongoDB",
-  // "Mongoose",
   "A11y (WCAG)",
   "E-commerce",
-  // "WordPress, Woocommerce",
-  // "SEO",
-  // "SPA Architecture",
+  "WordPress, Woocommerce",
+  "SEO",
+  "SPA Architecture",
 ];
 
 const softSkills = [
@@ -53,15 +48,21 @@ const softSkills = [
 ];
 
 const familiarity = [
+  "GenAI",
+  "Node.js",
+  "Next.js",
   "React Native",
   "GraphQL",
   "Docker",
   "MongoDB",
   "Mongoose",
   "Firebase",
+  "Microfrontends",
+  "WebSockets",
   "AWS",
   "Azure",
-  "WebSockets",
+  "Google Cloud",
+  "Python",
 ];
 
 const certificates = [
@@ -133,13 +134,13 @@ const App = () => {
 
           <Skills title="Skills" data={hardSkills} />
 
-          <Skills title="Familiar with" data={hardSkills} />
-
           <Skills title="Soft Skills" data={softSkills} />
+
+          <Skills title="Familiar With" data={familiarity} />
 
           <Section title="Recent Projects">
             <Job
-              title="Inditex - Billing Conditions Platform"
+              title="NDA - Billing Conditions Platform"
               location="Spain"
               period="10/2024 – 02/2025"
               description={"The app is used to manage billing conditions for different purchase centers, stores, and countries. It allows users to create, update, and delete different price rules, as well as generate reports and manage user roles."}
@@ -163,7 +164,7 @@ const App = () => {
             />
 
             <Job
-              title="Inditex - Customs Clearance Platform"
+              title="NDA - Customs Clearance Platform"
               location="Spain"
               period="01/2024 – 10/2024"
               description={"Platform designed for automation customs documentation. The system enhances logistics operations by optimizing data management and improving user experience for forwarders and customs brokers."}
@@ -188,7 +189,7 @@ const App = () => {
               ]}
             />
             <Job
-              title="Inditex - Logistics Platform"
+              title="NDA - Logistics Platform"
               location="Spain"
               period="10/2021 – 12/2023"
               description={"Logistic Platform, online map. Logistic routes and trucks showed on the map with transport location platforms, departure and arrival centers. The app is used by internal company employees to manage logistics operations, including route planning, shipment tracking, and delivery scheduling."}
@@ -265,7 +266,7 @@ const App = () => {
             {/*<div className="print--margin-bottom"/>*/}
 
             <Job
-              title="Brussels Airport Loyalty"
+              title="Brussels Airport - Enjoy (Loyalty)"
               location="Belgium"
               period="10/2019 – 04/2020"
               description={"The Brussels Airport reward (loyalty) program for airport clients. The application was designed so that when a customer registers with their phone number and arrives at the airport, their geolocation is detected. This triggers the delivery of various bonuses directly to their phone—such as Fast Pass access, duty-free discounts, and more."}
