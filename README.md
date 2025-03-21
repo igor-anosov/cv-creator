@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# СV Creator App
+This is a simple CV creator app that allows you to create a CV with your personal information, education, work experience, and more.
+
+For now, it works just like a coding project - you have to update the components with your information manually.
+But in the future I plan to implement a UI forms with online preview.
+
+If you need something specific, you can just add a new Section component.
+When you're done, you can download the CV as a PDF file - there's a button in the top right conner of the page.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
