@@ -2,12 +2,13 @@ import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 
 import "./App.css";
-import {Header, Job, Section, Skills, TitledList} from "./components";
+import { Header, Job, Section, Skills, TitledList } from "./components";
 
 const hardSkills = [
   "React",
   "JavaScript (ES6+)",
   "TypeScript",
+  "Next.js (SSR/SSG)",
   "Responsive Design",
   "Redux",
   "Redux Saga",
@@ -20,15 +21,18 @@ const hardSkills = [
   "Git",
   "Agile/SCRUM",
   "Design Patterns",
-  "Performance Optimization",
   "Jest",
   "Vite",
+  "Storybook",
+  "Figma",
   "React Testing Library",
   "Error Handling",
   "A11y (WCAG)",
-  "E-commerce",
-  "WordPress, Woocommerce",
   "SEO",
+  "Performance Optimization",
+  "Core Web Vitals",
+  "Lighthouse",
+  "TDD",
   "SPA Architecture",
 ];
 
@@ -48,9 +52,13 @@ const softSkills = [
 ];
 
 const familiarity = [
+  "CMS (Sanity.io)",
+  "WordPress, Woocommerce",
+  "E-commerce",
+  "Shopify",
   "GenAI",
+  "oAuth2",
   "Node.js",
-  "Next.js",
   "React Native",
   "GraphQL",
   "Docker",
@@ -143,7 +151,9 @@ const App = () => {
               title="NDA - Billing Conditions Platform"
               location="Spain"
               period="10/2024 – 02/2025"
-              description={"The app is used to manage billing conditions for different purchase centers, stores, and countries. It allows users to create, update, and delete different price rules, as well as generate reports and manage user roles."}
+              description={
+                "The app is used to manage billing conditions for different purchase centers, stores, and countries. It allows users to create, update, and delete different price rules, as well as generate reports and manage user roles."
+              }
               achievements={[
                 "Redesigned the app from a legacy web app to a modern UI using the latest Amiga framework components",
                 "Within the team designed application as a pricing management for users handling rates between different purchase centers and stores",
@@ -167,13 +177,30 @@ const App = () => {
               title="NDA - Customs Clearance Platform"
               location="Spain"
               period="01/2024 – 10/2024"
-              description={"Platform designed for automation customs documentation. The system enhances logistics operations by optimizing data management and improving user experience for forwarders and customs brokers."}
+              description={
+                "Platform designed for automation customs documentation. The system enhances logistics operations by optimizing data management and improving user experience for forwarders and customs brokers."
+              }
               achievements={[
-                <span>Improved an error handling of the UI by using a Typescript which reduced the number of errors by 50%</span>,
-                <span>Designed interfaces for customs clearance documentation, adhering to international trade regulations (EU, APAC)</span>,
-                <span>Implemented UI for a Logistics Management System (LMS) that integrates with customs brokers and forwarders</span>,
-                <span>Created dynamic table components enabling efficient handling, smooth navigation and manipulation of large datasets.</span>,
-                <span>Within the FE team increased a UI test coverage up to 80% by using Vitest and React Testing Library</span>,
+                <span>
+                  Improved an error handling of the UI by using a Typescript
+                  which reduced the number of errors by 50%
+                </span>,
+                <span>
+                  Designed interfaces for customs clearance documentation,
+                  adhering to international trade regulations (EU, APAC)
+                </span>,
+                <span>
+                  Implemented UI for a Logistics Management System (LMS) that
+                  integrates with customs brokers and forwarders
+                </span>,
+                <span>
+                  Created dynamic table components enabling efficient handling,
+                  smooth navigation and manipulation of large datasets.
+                </span>,
+                <span>
+                  Within the FE team increased a UI test coverage up to 80% by
+                  using Vitest and React Testing Library
+                </span>,
               ]}
               technologies={[
                 "React",
@@ -192,7 +219,9 @@ const App = () => {
               title="NDA - Logistics Platform"
               location="Spain"
               period="10/2021 – 12/2023"
-              description={"Logistic Platform, online map. Logistic routes and trucks showed on the map with transport location platforms, departure and arrival centers. The app is used by internal company employees to manage logistics operations, including route planning, shipment tracking, and delivery scheduling."}
+              description={
+                "Logistic Platform, online map. Logistic routes and trucks showed on the map with transport location platforms, departure and arrival centers. The app is used by internal company employees to manage logistics operations, including route planning, shipment tracking, and delivery scheduling."
+              }
               achievements={[
                 "Took a key part on the implementation of the user interface for a logistics application used by 1,000+ users, enabling real-time tracking of delivery routes, shipment statuses, and customs documentation.",
                 "Partnered with other teams (BE) to deliver a seamless full-stack solution, ensuring alignment with business goals and technical constraints.",
@@ -220,7 +249,9 @@ const App = () => {
                 "Decreased by 60% of re-renders of the main content area by implementing a memoization using React.memo and lazy loading.",
                 "Engineered a scalable and efficient filtering system for the sidebar panel, leveraging advanced state management patterns and performance optimization techniques.",
               ]}
-              description={"The application which aims to collect the data about all sales in season, making promotions and sale coupons. It filters data by wide range of parameters and forecast possible revenue for future seasons."}
+              description={
+                "The application which aims to collect the data about all sales in season, making promotions and sale coupons. It filters data by wide range of parameters and forecast possible revenue for future seasons."
+              }
               technologies={[
                 "React",
                 "Redux",
@@ -245,8 +276,10 @@ const App = () => {
                 "Increased by 20% the First-byte load times by suggesting an updates for the CDN configuration.",
                 "Worked on improving the global app state management and creating UI layout.",
                 "Implemented an interface customization feature, allowing users to personalize their dashboard and content based on their preferences.",
-                ]}
-              description={"Worked on creation of a dashboard for app which is used by sports fans to stream live sports events."}
+              ]}
+              description={
+                "Worked on creation of a dashboard for app which is used by sports fans to stream live sports events."
+              }
               technologies={[
                 "React",
                 "React hooks",
@@ -269,7 +302,9 @@ const App = () => {
               title="Brussels Airport - Enjoy (Loyalty)"
               location="Belgium"
               period="10/2019 – 04/2020"
-              description={"The Brussels Airport reward (loyalty) program for airport clients. The application was designed so that when a customer registers with their phone number and arrives at the airport, their geolocation is detected. This triggers the delivery of various bonuses directly to their phone—such as Fast Pass access, duty-free discounts, and more."}
+              description={
+                "The Brussels Airport reward (loyalty) program for airport clients. The application was designed so that when a customer registers with their phone number and arrives at the airport, their geolocation is detected. This triggers the delivery of various bonuses directly to their phone—such as Fast Pass access, duty-free discounts, and more."
+              }
               achievements={[
                 "Developed complex voucher system which customers now can use to get discounts in the Brussels Airport shops.",
                 "Actively participated in the planning and design of the app, including Planning Weeks with Product Owners from Brussels",
@@ -297,9 +332,11 @@ const App = () => {
                 "Key role in the design and development of the app that aims to control hardware equipment for stores and shops",
                 "Implemented a dynamic dashboard with real-time data visualization, enabling users to monitor and adjust cooling systems based on temperature and energy consumption metrics.",
                 "Developed smart system UI components with full control features for use in the dashboard and the app. It's been used lately by other engineering departments of Danfoss Co.",
-                "Had a business trip to Denmark to collaborate directly with the client-side team."
+                "Had a business trip to Denmark to collaborate directly with the client-side team.",
               ]}
-              description={"The app that aims to control hardware equipment for stores and shops. Users can control, toggle on/off, and view real-time data for all in-store equipment and hardware, such as refrigerators, lighting, air conditioning, and more."}
+              description={
+                "The app that aims to control hardware equipment for stores and shops. Users can control, toggle on/off, and view real-time data for all in-store equipment and hardware, such as refrigerators, lighting, air conditioning, and more."
+              }
               technologies={[
                 "React",
                 "Redux",
@@ -316,9 +353,8 @@ const App = () => {
           <Section title="Certificates">
             <ul>
               {certificates.map((certificate, index) => (
-                  <li key={index}>{certificate}</li>
-                ))
-              }
+                <li key={index}>{certificate}</li>
+              ))}
             </ul>
           </Section>
 
@@ -328,17 +364,33 @@ const App = () => {
               location="Lviv, Ukraine"
               period="2022 – Present"
             >
-              <span><strong>Evaluated 30+</strong> candidates for Frontend Developer roles from AE to Senior levels</span>
-              <span>Collaborated with hiring managers and HR to align technical expectations with business needs and project requirements.</span>
-              <span>Helped build a strong frontend team, contributing to the selection of high-quality candidates who successfully integrated into development teams.</span>
+              <span>
+                <strong>Evaluated 30+</strong> candidates for Frontend Developer
+                roles from AE to Senior levels
+              </span>
+              <span>
+                Collaborated with hiring managers and HR to align technical
+                expectations with business needs and project requirements.
+              </span>
+              <span>
+                Helped build a strong frontend team, contributing to the
+                selection of high-quality candidates who successfully integrated
+                into development teams.
+              </span>
             </TitledList>
             <TitledList
               title="Epam front-end course - JS Lab"
               location="Lviv, Ukraine"
               period="2019 – 2020"
             >
-              <span><strong>Trained 150+</strong> students over 2 years, covering JavaScript, React, and modern frontend development practices.</span>
-              <span>Mentored students individually, helping them overcome technical challenges and improve their problem-solving skills.</span>
+              <span>
+                <strong>Trained 150+</strong> students over 2 years, covering
+                JavaScript, React, and modern frontend development practices.
+              </span>
+              <span>
+                Mentored students individually, helping them overcome technical
+                challenges and improve their problem-solving skills.
+              </span>
               <span>Conducted technical assessments and code reviews.</span>
             </TitledList>
             <TitledList
@@ -346,8 +398,14 @@ const App = () => {
               location="Zaporizhzhia, Ukraine"
               period="2017 – 2018"
             >
-              <span>Designed course content based on student feedback, keeping it aligned with the latest JavaScript trends and industry demands.</span>
-              <span><strong>Trained 20+</strong> students, covering JavaScript, React, and modern frontend development practices.</span>
+              <span>
+                Designed course content based on student feedback, keeping it
+                aligned with the latest JavaScript trends and industry demands.
+              </span>
+              <span>
+                <strong>Trained 20+</strong> students, covering JavaScript,
+                React, and modern frontend development practices.
+              </span>
               <span>Conducted technical assessments and code reviews.</span>
             </TitledList>
           </Section>
@@ -368,28 +426,40 @@ const App = () => {
               location="On-line conference"
               period="04/2020"
             >
-              <p>Highlighted pros and cons of diﬀerent ways of delivering projects</p>
+              <p>
+                Highlighted pros and cons of diﬀerent ways of delivering
+                projects
+              </p>
             </TitledList>
             <TitledList
               title="Business English, Short Course"
               location="Oﬀ-line course within EPAM"
               period="02/2019 – 08/2019"
             >
-              <p>As a result, I increased my speaking and writing level to B2 (Intermediate)</p>
+              <p>
+                As a result, I increased my speaking and writing level to B2
+                (Intermediate)
+              </p>
             </TitledList>
             <TitledList
               title="Friday JS"
               location="Oﬀ-line meetups, Zaporizhzhia, Ukraine"
               period="02/2018 – 08/2018"
             >
-              <p>Series of Friday meetings in JS community of front-end developers in Zaporizhzhia</p>
+              <p>
+                Series of Friday meetings in JS community of front-end
+                developers in Zaporizhzhia
+              </p>
             </TitledList>
             <TitledList
               title="Kharkiv CSS"
               location="Oﬀ-line conference, Kharkiv, Ukraine"
               period="04/2017"
             >
-              <p>Big annual front-end meetup. There were highlighted new CSS4 features, JS animations and others.</p>
+              <p>
+                Big annual front-end meetup. There were highlighted new CSS4
+                features, JS animations and others.
+              </p>
             </TitledList>
           </Section>
 
